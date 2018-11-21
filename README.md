@@ -16,4 +16,6 @@
     将文件保存成GTKbuilder形式（本质是XML文件），在c语言代码中可以直接获取对象。
     sudo apt-get glad
 ### 4.配置IDE环境变量
-     进入codeblocks中创建project选择GTK+项目，之后需要配置编译路径，右键项目 → build options → （compiler 中的other   ，linker中的other）两个地方添加如下语句`pkg-config --blibs --cflags gtk+-3.0`
+     进入codeblocks中创建project选择GTK+项目，之后需要配置编译路径，
+     右键项目 → build options → （compiler 中的other   ，linker中的other）两个地方添加如下语句
+     `pkg-config --blibs --cflags gtk+-3.0`
