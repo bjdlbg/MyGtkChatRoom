@@ -19,3 +19,16 @@
      进入codeblocks中创建project选择GTK+项目，之后需要配置编译路径，
      右键项目 → build options → （compiler 中的other   ，linker中的other）两个地方添加如下语句
      `pkg-config --libs --cflags gtk+-3.0`
+## glade3 的简单使用
+glade是一个gtk的画图工具，该软件允许使用拖拽控件的方式进行界面布局设计，该软件有多种布局方式比如相对布局，表格布局等，控件也有很多种类型，该工具的原理就是将布局保存为一个xml文件，利用gtk+内置的GTKBuilder函数，进行对布局控件的读取，然后加以调用。并且还可以绑定signal，实现button的点击事件等。
+需要注意的主要就是，在glade中需要将文件保存为GTKBuilder的形式，然后需要用
+
+```
+//获取 Builder
+GtkBuilder *builder;
+//填写文件的路径
+ gtk_builder_add_from_file(builder,"/home/lmm/文档/login.glade", NULL );
+
+```
+最后给出官方文档：
+GTK+：https://developer.gnome.org/gtk3/stable/gtk-getting-started.html
