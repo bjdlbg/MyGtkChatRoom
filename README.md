@@ -7,14 +7,14 @@
 - 第二步安装GTK+3.0 
       ①Linux中使用如下命令 sudo apt-get install libgtk-3-dev  ②安装项目管理工具 sudo apt-get install pkg-config  ③（选择安装）GTk帮助文档 sudo apt-get install devhelp 
 - 第三步安装后确认
-     确认pkg版本 pkg-config -–version   确认GTK+版本  pkg-config –-modversion gtk+-3.0
+     确认pkg版本 pkg-config --version   确认GTK+版本  pkg-config --modversion gtk+-3.0
 ### 2.安装代码编辑环境 codeblocks 
     vim编辑器没有代码补全也没有错误提示。这个不多说，况且该IDE可以直接新建GTK+项目；
     sudo apt-get install codeblocks
 ### 3.安装glade3
     glade3可以创建图形界面，手动绘制。
     将文件保存成GTKbuilder形式（本质是XML文件），在c语言代码中可以直接获取对象。
-    sudo apt-get install glad
+    sudo apt-get install glade
 ### 4.配置IDE环境变量
      进入codeblocks中创建project选择GTK+项目，之后需要配置编译路径，
      右键项目 → build options → （compiler 中的other   ，linker中的other）两个地方添加如下语句
