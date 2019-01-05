@@ -32,3 +32,5 @@ GtkBuilder *builder;
 ```
 最后给出官方文档：
 GTK+：https://developer.gnome.org/gtk3/stable/gtk-getting-started.html
+
+<center>中道崩殂，改用QT编写，详情戳[Group6ChatRoom](https://github.com/bjdlbg/Qt)
