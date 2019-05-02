@@ -1,7 +1,7 @@
 # MyGtkChatRoom
 ## 本软件基于Linux下的  codeblocks + GTK+-3.0 + glade3 + C语言 开发的及时通讯软件
 
-### 1.Linux系统中安装GTK+工具包（基于Ubuntu18.4）
+### 1.Linux系统中安装GTK+工具包（基于Ubuntu18.04）
 - 之前准备工作 sudo apt-get update 对安装源更新   
 - 第一步确保Linux或者虚拟机中装好了C语言环境（gcc/g++等编译工具）可以使用如下命令 sudo apt-get install build-essential
 - 第二步安装GTK+3.0 
@@ -32,4 +32,5 @@ GtkBuilder *builder;
 ```
 最后给出官方文档：
 GTK+：(https://developer.gnome.org/gtk3/stable/gtk-getting-started.html)
+
 中道崩殂，改用QT编写，详情戳[第六组聊天室Group6ChatRoom](https://github.com/bjdlbg/Qt)
